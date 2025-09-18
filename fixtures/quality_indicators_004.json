@@ -1,0 +1,132 @@
+{
+  "quality_id": "quality_indicators_004",
+  "assessment_period": {
+    "start": "2024-01-01T00:00:00Z",
+    "end": "2024-01-01T23:59:59Z",
+    "evaluation_frequency": "continuous"
+  },
+  "data_quality_metrics": {
+    "completeness": {
+      "overall_score": 0.95,
+      "target_score": 0.90,
+      "measurement_coverage": {
+        "system_metrics": 0.96,
+        "business_kpis": 0.94,
+        "sla_data": 0.97,
+        "user_analytics": 0.92
+      },
+      "missing_data_percentage": 5.0,
+      "quality_trend": "stable"
+    },
+    "accuracy": {
+      "overall_score": 0.92,
+      "target_score": 0.85,
+      "validation_checks": {
+        "range_validation": 0.98,
+        "format_validation": 0.94,
+        "cross_reference_validation": 0.89,
+        "business_rule_validation": 0.88
+      },
+      "error_rate": 0.08,
+      "correction_rate": 0.95
+    },
+    "timeliness": {
+      "overall_score": 0.88,
+      "target_score": 0.85,
+      "latency_metrics": {
+        "data_collection_delay_seconds": 45,
+        "processing_delay_seconds": 120,
+        "reporting_delay_seconds": 180,
+        "end_to_end_delay_seconds": 345
+      },
+      "freshness_percentage": 94.2,
+      "stale_data_percentage": 5.8
+    },
+    "consistency": {
+      "overall_score": 0.91,
+      "target_score": 0.88,
+      "cross_system_consistency": 0.89,
+      "temporal_consistency": 0.93,
+      "referential_integrity": 0.90,
+      "duplicate_rate": 0.02
+    }
+  },
+  "measurement_reliability": {
+    "sensor_health": {
+      "operational_sensors": 147,
+      "total_sensors": 150,
+      "sensor_uptime_percentage": 98.0,
+      "calibration_status": "current",
+      "last_calibration": "2023-12-15T10:00:00Z"
+    },
+    "collection_pipeline": {
+      "pipeline_availability": 0.97,
+      "throughput_capacity_percentage": 85,
+      "error_handling_effectiveness": 0.94,
+      "data_loss_percentage": 0.05
+    },
+    "storage_integrity": {
+      "checksum_validation_rate": 1.00,
+      "backup_verification_rate": 0.98,
+      "storage_redundancy_factor": 3,
+      "corruption_incident_count": 0
+    }
+  },
+  "confidence_indicators": {
+    "statistical_confidence": {
+      "sample_size_adequacy": 0.96,
+      "confidence_interval_95": {
+        "system_performance": [0.92, 0.98],
+        "business_metrics": [0.88, 0.96],
+        "sla_compliance": [0.95, 0.99]
+      },
+      "margin_of_error": 0.02
+    },
+    "measurement_uncertainty": {
+      "systematic_error_estimate": 0.01,
+      "random_error_variance": 0.003,
+      "calibration_uncertainty": 0.005,
+      "overall_measurement_uncertainty": 0.015
+    }
+  },
+  "anomaly_detection": {
+    "anomaly_indicators": {
+      "statistical_outliers_count": 12,
+      "pattern_deviations_count": 3,
+      "threshold_breaches_count": 1,
+      "data_quality_alerts_count": 2
+    },
+    "anomaly_resolution": {
+      "resolved_anomalies": 10,
+      "pending_investigation": 6,
+      "false_positive_rate": 0.15,
+      "detection_accuracy": 0.88
+    }
+  },
+  "compliance_tracking": {
+    "regulatory_compliance": {
+      "gdpr_compliance_score": 0.97,
+      "sox_compliance_score": 0.94,
+      "industry_standards_compliance": 0.92
+    },
+    "audit_readiness": {
+      "documentation_completeness": 0.95,
+      "trace_ability_score": 0.93,
+      "retention_policy_compliance": 0.98
+    }
+  },
+  "improvement_recommendations": [
+    "Enhance real-time data validation for business KPIs",
+    "Implement automated sensor calibration scheduling",
+    "Optimize data collection pipeline for reduced latency",
+    "Strengthen cross-system consistency checks",
+    "Expand anomaly detection rule coverage"
+  ],
+  "metadata": {
+    "quality_framework": "ISO_25012",
+    "assessment_methodology": "automated_continuous_monitoring",
+    "validation_tools": ["great_expectations", "custom_validators", "statistical_tests"],
+    "last_updated": "2024-01-01T12:00:00Z",
+    "assessment_confidence": 0.94
+  }
+}

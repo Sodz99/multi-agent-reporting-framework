@@ -1,0 +1,95 @@
+{
+  "kpis_id": "business_kpis_002",
+  "reporting_period": {
+    "start": "2024-01-01T00:00:00Z",
+    "end": "2024-01-01T23:59:59Z",
+    "frequency": "daily"
+  },
+  "user_engagement": {
+    "active_users": {
+      "current_value": 15420,
+      "target_value": 12000,
+      "growth_rate": 0.125,
+      "quality_score": 0.94
+    },
+    "session_duration": {
+      "average_minutes": 18.5,
+      "target_minutes": 15.0,
+      "improvement_percentage": 23.3,
+      "quality_score": 0.91
+    },
+    "page_views": {
+      "total_count": 125000,
+      "unique_sessions": 18200,
+      "bounce_rate": 0.32,
+      "quality_score": 0.88
+    }
+  },
+  "transaction_metrics": {
+    "total_transactions": {
+      "count": 52400,
+      "target_count": 45000,
+      "success_rate": 0.985,
+      "quality_score": 0.96
+    },
+    "transaction_volume": {
+      "total_value": 2850000.00,
+      "currency": "USD",
+      "average_value": 54.39,
+      "target_value": 2500000.00,
+      "quality_score": 0.93
+    },
+    "payment_processing": {
+      "success_rate": 0.992,
+      "average_processing_time_ms": 850.5,
+      "failure_categories": {
+        "network_timeout": 0.003,
+        "insufficient_funds": 0.004,
+        "card_declined": 0.001
+      },
+      "quality_score": 0.97
+    }
+  },
+  "revenue_metrics": {
+    "daily_revenue": {
+      "amount": 125000.00,
+      "currency": "USD",
+      "target_amount": 100000.00,
+      "growth_rate": 0.25,
+      "quality_score": 0.95
+    },
+    "conversion_rate": {
+      "percentage": 3.8,
+      "target_percentage": 3.5,
+      "improvement": 0.08,
+      "quality_score": 0.89
+    },
+    "customer_acquisition_cost": {
+      "amount": 45.50,
+      "target_amount": 50.00,
+      "efficiency_improvement": 0.09,
+      "quality_score": 0.92
+    }
+  },
+  "customer_satisfaction": {
+    "nps_score": {
+      "current_score": 72,
+      "target_score": 70,
+      "survey_responses": 1250,
+      "quality_score": 0.85
+    },
+    "support_tickets": {
+      "total_count": 125,
+      "resolution_time_hours": 2.5,
+      "satisfaction_rating": 4.3,
+      "target_resolution_hours": 4.0,
+      "quality_score": 0.87
+    }
+  },
+  "metadata": {
+    "data_sources": ["analytics_platform", "payment_gateway", "crm_system"],
+    "calculation_accuracy": 0.94,
+    "data_freshness_minutes": 15,
+    "last_updated": "2024-01-01T12:00:00Z"
+  }
+}

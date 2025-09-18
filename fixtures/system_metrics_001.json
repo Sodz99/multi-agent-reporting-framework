@@ -1,0 +1,72 @@
+{
+  "metrics_id": "system_metrics_001",
+  "collection_period": {
+    "start": "2024-01-01T00:00:00Z",
+    "end": "2024-01-01T23:59:59Z",
+    "interval": "5min"
+  },
+  "system_performance": {
+    "response_time": {
+      "current_value": 145.2,
+      "unit": "milliseconds",
+      "p50": 120.5,
+      "p95": 280.3,
+      "p99": 450.1,
+      "sla_target": 200,
+      "breach_count": 0,
+      "quality_score": 0.95
+    },
+    "throughput": {
+      "current_value": 1250.0,
+      "unit": "requests_per_second",
+      "peak_value": 1850.0,
+      "average_value": 1180.5,
+      "baseline_target": 1000,
+      "quality_score": 0.92
+    },
+    "error_rate": {
+      "current_value": 0.3,
+      "unit": "percentage",
+      "threshold": 1.0,
+      "breach_incidents": [],
+      "quality_score": 0.98
+    }
+  },
+  "resource_utilization": {
+    "cpu_usage": {
+      "current_value": 68.5,
+      "unit": "percentage",
+      "peak_value": 85.2,
+      "average_value": 65.1,
+      "threshold": 80.0,
+      "quality_score": 0.89
+    },
+    "memory_usage": {
+      "current_value": 72.1,
+      "unit": "percentage",
+      "peak_value": 82.5,
+      "average_value": 70.3,
+      "threshold": 85.0,
+      "quality_score": 0.91
+    },
+    "disk_io": {
+      "read_iops": 1250,
+      "write_iops": 850,
+      "utilization_percentage": 45.2,
+      "quality_score": 0.93
+    }
+  },
+  "network_metrics": {
+    "bandwidth_utilization": 62.3,
+    "packet_loss_rate": 0.05,
+    "latency_ms": 12.5,
+    "connection_count": 5420,
+    "quality_score": 0.88
+  },
+  "metadata": {
+    "data_sources": ["prometheus", "grafana", "custom_collectors"],
+    "measurement_accuracy": 0.92,
+    "data_completeness": 0.96,
+    "last_updated": "2024-01-01T12:00:00Z"
+  }
+}

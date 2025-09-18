@@ -1,0 +1,35 @@
+{
+  "fixtures": [
+    {
+      "id": "system_metrics_001",
+      "path": "system_metrics_001.json",
+      "description": "Core system performance metrics including response times, throughput, and resource utilization"
+    },
+    {
+      "id": "business_kpis_002",
+      "path": "business_kpis_002.json",
+      "description": "Business-level KPIs including user activity, transaction volumes, and revenue metrics"
+    },
+    {
+      "id": "sla_performance_003",
+      "path": "sla_performance_003.json",
+      "description": "SLA compliance metrics and availability tracking data"
+    },
+    {
+      "id": "quality_indicators_004",
+      "path": "quality_indicators_004.json",
+      "description": "Data quality indicators including completeness, accuracy, and timeliness metrics"
+    },
+    {
+      "id": "comparative_baseline_005",
+      "path": "comparative_baseline_005.json",
+      "description": "Historical baseline data for comparative analysis and trend detection"
+    }
+  ],
+  "metadata": {
+    "dataset_name": "automated_reporting_demo",
+    "version": "1.0.0",
+    "generated_at": "2024-01-01T12:00:00Z",
+    "description": "Sample telemetry data for automated reporting system demonstration"
+  }
+}

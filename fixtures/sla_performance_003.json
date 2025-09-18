@@ -1,0 +1,106 @@
+{
+  "sla_id": "sla_performance_003",
+  "measurement_period": {
+    "start": "2024-01-01T00:00:00Z",
+    "end": "2024-01-01T23:59:59Z",
+    "measurement_interval": "1min"
+  },
+  "availability_metrics": {
+    "system_uptime": {
+      "percentage": 99.7,
+      "sla_target": 99.5,
+      "total_downtime_minutes": 4.3,
+      "incident_count": 1,
+      "breach_status": false,
+      "quality_score": 1.0
+    },
+    "service_availability": {
+      "web_frontend": {
+        "uptime_percentage": 99.9,
+        "sla_target": 99.5,
+        "response_check_success_rate": 0.998
+      },
+      "api_backend": {
+        "uptime_percentage": 99.6,
+        "sla_target": 99.5,
+        "response_check_success_rate": 0.994
+      },
+      "database_layer": {
+        "uptime_percentage": 99.8,
+        "sla_target": 99.5,
+        "connection_success_rate": 0.997
+      }
+    }
+  },
+  "performance_slas": {
+    "response_time_sla": {
+      "target_ms": 200,
+      "actual_p95_ms": 180.5,
+      "compliance_percentage": 98.5,
+      "breach_incidents": 0,
+      "quality_score": 0.95
+    },
+    "throughput_sla": {
+      "target_rps": 1000,
+      "actual_peak_rps": 1850,
+      "sustained_capacity_rps": 1200,
+      "compliance_status": "exceeded",
+      "quality_score": 0.92
+    },
+    "error_rate_sla": {
+      "target_percentage": 1.0,
+      "actual_percentage": 0.3,
+      "compliance_status": "met",
+      "breach_count": 0,
+      "quality_score": 0.98
+    }
+  },
+  "business_slas": {
+    "transaction_processing": {
+      "success_rate_target": 99.0,
+      "actual_success_rate": 99.2,
+      "processing_time_target_ms": 1000,
+      "actual_processing_time_ms": 850,
+      "compliance_status": "exceeded"
+    },
+    "data_backup": {
+      "backup_frequency_target": "daily",
+      "actual_frequency": "daily",
+      "backup_success_rate": 100.0,
+      "recovery_time_target_hours": 4,
+      "last_recovery_test_hours": 2.5
+    }
+  },
+  "compliance_tracking": {
+    "monthly_sla_score": 99.1,
+    "quarterly_trend": "improving",
+    "year_to_date_compliance": 98.8,
+    "penalties_incurred": 0,
+    "credits_issued": 0
+  },
+  "incident_analysis": {
+    "total_incidents": 1,
+    "severity_breakdown": {
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 0
+    },
+    "mttr_minutes": 4.3,
+    "mtbf_hours": 720,
+    "root_causes": [
+      {
+        "category": "network_latency",
+        "description": "Brief network connectivity issue",
+        "impact_minutes": 4.3,
+        "resolution": "Automatic failover to backup connection"
+      }
+    ]
+  },
+  "metadata": {
+    "monitoring_systems": ["datadog", "pingdom", "custom_health_checks"],
+    "measurement_precision": 0.99,
+    "alert_response_time_minutes": 2,
+    "last_updated": "2024-01-01T12:00:00Z"
+  }
+}
